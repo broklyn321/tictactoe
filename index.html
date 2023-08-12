@@ -10,21 +10,22 @@
     <header class="header">
         <h1 class="title">Tic-Tac-Toe</h1>
     </header>
-    <div class="win">    
+    <div class="message" id="message">
+    Player X's turn
     </div>
-    <div class="board"id="ttt">
-        <div class="cell" id="0"></div>
-        <div class="cell" id="1"></div>
-        <div class="cell" id="2"></div>
-        <div class="cell" id="3"></div>
-        <div class="cell" id="4"></div>
-        <div class="cell" id="5"></div>
-        <div class="cell" id="6"></div>
-        <div class="cell" id="7"></div>
-        <div class="cell" id="8"></div>
+    <div class="gameboard"id="ttt">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
     </div>
     <div class="re">
-        <button class="restart">Reset</button>
+        <button class="restart" id="restart">Reset</button>
     </div>
     <script src="script.js"></script>
 </body>
