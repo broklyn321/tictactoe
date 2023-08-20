@@ -20,7 +20,8 @@ const gameBoard = (() => {
     return board[index];
   };
   const reset = () => {
-    for (let i = 0; i < board.length; i++) {
+    for (let i = 0; i < board.length; i++)
+    {
       board[i] = "";
     }
   };
@@ -35,7 +36,8 @@ const dispcon = (() => {
 
   cellElements.forEach((cell) =>
     cell.addEventListener("click", (e) => {
-      if (gamecon.getIsOver() || e.target.textContent !== "") return;
+      if (gamecon.getIsOver() || e.target.textContent !== "")
+      return;
       gamecon.playRound(parseInt(e.target.dataset.index));
       updtboard();
     })
@@ -49,17 +51,17 @@ const dispcon = (() => {
   });
 
   const updtboard = () => {
-    for (let i = 0; i < cellElements.length; i++) {
+    for (let i = 0; i < cellElements.length; i++)
+    {
       cellElements[i].textContent = gameBoard.getcell(i);
     }
   };
 
   const setmsg = (winner) => {
-    if (winner === "Draw") {
-      setMessageElement("It's a draw!");
-    } else {
+    if (winner === "Draw")
+    setMessageElement("It's a draw!");
+     else 
       setMessageElement(`Player ${winner} has won!`);
-    }
   };
 
   const setMessageElement = (message) => {
